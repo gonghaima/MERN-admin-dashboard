@@ -4,6 +4,8 @@ import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from 'scenes/dashboard';
+import Products from 'scenes/products';
+import Customers from 'scenes/customers';
 import Layout from 'scenes/layout';
 import { themeSettings } from 'theme';
 
@@ -19,6 +21,8 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/customers" element={<Customers />} />
             </Route>
           </Routes>
         </ThemeProvider>
