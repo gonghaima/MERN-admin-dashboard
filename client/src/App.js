@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from 'scenes/dashboard';
 import Products from 'scenes/products';
 import Customers from 'scenes/customers';
+import Transactions from "scenes/transactions";
 import Layout from 'scenes/layout';
 import { themeSettings } from 'theme';
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
+              <Route path="/transactions" element={<Transactions />} />
             </Route>
           </Routes>
         </ThemeProvider>
